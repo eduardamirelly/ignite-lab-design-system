@@ -36,7 +36,7 @@ export const CustomComponent: StoryObj<HeadingProps> = {
   args: {
     asChild: true,
     children: (
-      <h1>Testing...</h1>
+      <h1>Heading with H1 tag</h1>
     )
   },
   argTypes: {
