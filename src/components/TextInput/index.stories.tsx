@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
+import { Envelope } from "phosphor-react";
 import { TextInput, TextInputProps, TextInputRootProps } from ".";
 
 export default {
@@ -6,7 +7,12 @@ export default {
   component: TextInput.Root,
   args: {
     children: (
-      <TextInput.Input placeholder="Placeholder" />
+      <>
+        <TextInput.Icon>
+          <Envelope />
+        </TextInput.Icon>
+        <TextInput.Input placeholder="Placeholder" />
+      </>
     )
   },
   argTypes: {
